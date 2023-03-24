@@ -1,9 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>_3PLSalesOrder</RootNamespace>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AttachmentDown1.cs" />
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="ScriptMain.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Graph" Version="5.2.0" />
+    <PackageReference Include="Microsoft.Graph.Core" Version="3.0.2" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.51.0" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <PackageReference Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1004" />
+    <PackageReference Include="OpenPop.NET" Version="2.0.6.1120" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+  </ItemGroup>
 
 </Project>
